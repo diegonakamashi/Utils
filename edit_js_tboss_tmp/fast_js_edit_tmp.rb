@@ -28,6 +28,8 @@ if(ARGV.size > 0)
   js_list = get_all_js
   js_path = get_js_path ARGV[0], js_list
   
+puts "gedit #{JBOSS_DEPLOY_PATH}/tmp/#{js_path}"
+  
   system("gedit #{JBOSS_DEPLOY_PATH}/tmp/#{js_path}")
   
 else
